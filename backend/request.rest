@@ -1,0 +1,87 @@
+//create User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "jon@mail.com",
+    "password": "123",
+    "confPassword": "123",
+    "role": "user"
+}
+
+####
+//GET ALL USERS
+GET http://localhost:5000/users
+
+####
+//GET SINGLE USERS
+GET http://localhost:5000/users/4f52f148-5bd2-4374-a9ab-cc54bb432ea7
+
+####
+//GET ALL USERS
+GET http://localhost:5000/users
+
+####
+//UPDATE USER
+PATCH http://localhost:5000/users/4f52f148-5bd2-4374-a9ab-cc54bb432ea7
+Content-Type: application/json
+
+{
+    "name": "John Doe Updated",
+    "email": "jon@mail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "user"
+}
+
+####
+//DELETE USER 
+DELETE http://localhost:5000/users/46eba0a4-950e-4c4d-af25-92b773e108c3
+
+####
+///LOGIN USER ADMIN
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "reza@mail.com",
+    "password": "123"
+}
+
+###
+///LOGIN USER "USER"
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "jon@mail.com",
+    "password": "123"
+}
+
+####
+///ME
+GET http://localhost:5000/me
+
+####
+///LOGOUT
+DELETE http://localhost:5000/logout
+
+###
+// REQUEST DATA PRODUK GET ALL PRODUCTS
+GET http://localhost:5000/products
+
+###
+// REQUEST DATA PRODUK GET SINGLE PRODUCTS
+GET http://localhost:5000/products/8509c909-71ac-48e2-bdee-ad0a9c2a79b6
+
+###
+// POST Data Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "produk user",
+    "price": 6662
+}
+
