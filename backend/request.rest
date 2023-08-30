@@ -85,3 +85,17 @@ Content-Type: application/json
     "price": 6662
 }
 
+###
+// EDIT PRODUCT
+PATCH http://localhost:5000/products/2ebe3413-b008-4ff6-9f6e-60cb0ae5a4fc
+Content-Type: application/json
+
+{
+    "name": "produk updated user",
+    "price": 6663
+}
+
+###
+// DELETE PRODUCT
+DELETE http://localhost:5000/products/8509c909-71ac-48e2-bdee-ad0a9c2a79b6
+
